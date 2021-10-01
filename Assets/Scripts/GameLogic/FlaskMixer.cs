@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Scripts.Effects;
 using Scripts.Entity;
 using Scripts.Entity.Flask;
 using Scripts.GameLogic.Actions;
@@ -11,15 +12,15 @@ namespace Scripts.GameLogic
     {
         private FlaskGameObject selectFlask;
         private readonly Game game;
-        private readonly LiquidMixSound liquidMixSound;
+        private readonly LiquidMixEffect liquidMixEffect;
 
         private readonly List<(FlaskGameObject from, FlaskGameObject to, List<Liquid> liquids)> mixHistory
             = new List<(FlaskGameObject, FlaskGameObject, List<Liquid> liquids)>();
 
-        public FlaskMixer(Game game, LiquidMixSound liquidMixSound)
+        public FlaskMixer(Game game, LiquidMixEffect liquidMixEffect)
         {
             this.game = game;
-            this.liquidMixSound = liquidMixSound;
+            this.liquidMixEffect = liquidMixEffect;
         }
 
         public void Clear()
@@ -82,15 +83,11 @@ namespace Scripts.GameLogic
         {
             var topLiquids = fromFlask.flask.GetTopLiquids();
             if ((toFlask.flask.IsEmpty
-                || topLiquids[0].ColorHash == toFlask.flask.GetTopLiquid().ColorHash)
+                 || topLiquids[0].ColorHash == toFlask.flask.GetTopLiquid().ColorHash)
                 && MoveLiquids(fromFlask.flask, toFlask.flask, topLiquids))
             {
                 mixHistory.Add((fromFlask, toFlask, topLiquids));
-
-                if (toFlask.flask.IsHomogeneous() && toFlask.flask.IsFull)
-                    liquidMixSound.PlayFullLiquidMix();
-                else
-                    liquidMixSound.PlayLiquidMix();
+                liquidMixEffect.Play(toFlask);
             }
         }
 

@@ -1,9 +1,11 @@
 using System;
+using Scripts.Effects;
 using Scripts.GameLogic.Actions;
 using Scripts.GameLogic.Entity;
 using Scripts.Generator;
 using Scripts.UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Scripts.GameLogic
 {
@@ -11,7 +13,7 @@ namespace Scripts.GameLogic
    {
       [SerializeField] private LevelGenerator levelGenerator;
       [SerializeField] private GameUI gameUI;
-      [SerializeField] private LiquidMixSound liquidMixSound;
+      [SerializeField] private LiquidMixEffect liquidMixEffect;
       private FlaskMixer flaskMixer;
       private readonly CheckWinAction checkWinAction = new CheckWinAction();
       private readonly WinAction winAction = new WinAction();
@@ -20,7 +22,7 @@ namespace Scripts.GameLogic
 
       private void Awake()
       {
-         flaskMixer = new FlaskMixer(this, liquidMixSound);
+         flaskMixer = new FlaskMixer(this, liquidMixEffect);
       }
 
       public void CheckWin()

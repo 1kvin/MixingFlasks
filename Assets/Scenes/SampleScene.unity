@@ -853,7 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelGenerator: {fileID: 1459529407}
   gameUI: {fileID: 1238083301}
-  liquidMixSound: {fileID: 1396880251}
+  liquidMixEffect: {fileID: 1396880251}
 --- !u!1 &1236639497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd2356e94d8e1d44a9c1f25cda221f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filledFlaskEffectPrefab: {fileID: 754494392159403001, guid: ccc99e33c1bfb6a459836e13e5a3cf2c, type: 3}
   audioSource: {fileID: 1396880253}
   liquidMixSound: {fileID: 8300000, guid: c779d30585ddc6840b52a6c37221f70f, type: 3}
   liquidFullMixSound: {fileID: 8300000, guid: a4334b3d6d105664392ce7dcfcf03e84, type: 3}
