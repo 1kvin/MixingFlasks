@@ -1,0 +1,125 @@
+{
+    "m_SelectedDeviceId": "R58R51EZB9R",
+    "m_SelectedPackage": {
+        "deviceId": "R58R51EZB9R",
+        "name": "com.atechnologies.mixingFlask",
+        "processId": 16426,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.sec.android.app.launcher",
+            "processId": 7028,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.instagram.android",
+            "processId": 20421,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 20221,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 20222,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 24529,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 14085,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 26720,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 20403,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 4593,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 16426,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
