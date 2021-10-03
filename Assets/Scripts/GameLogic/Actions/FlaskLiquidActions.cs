@@ -19,7 +19,26 @@ namespace Scripts.GameLogic.Actions
 
             return null;
         }
-        
+
+        public static int GetFreeSize(this FlaskUnit flaskUnit)
+        {
+            int counter = 0;
+            var liquids = flaskUnit.Liquids;
+            
+            for (int i = FlaskUnit.LiquidLayerQuantity - 1; i >= 0; i--)
+            {
+                if (liquids[i] == null)
+                {
+                    counter++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            return counter;
+        }
         public static bool IsHomogeneous(this FlaskUnit flaskUnit)
         {
             if (flaskUnit.IsEmpty) return true;

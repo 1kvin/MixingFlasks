@@ -1,11 +1,10 @@
-using System;
 using Scripts.Effects;
 using Scripts.GameLogic.Actions;
 using Scripts.GameLogic.Entity;
 using Scripts.Generator;
 using Scripts.UI;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 namespace Scripts.GameLogic
 {
@@ -14,10 +13,11 @@ namespace Scripts.GameLogic
       [SerializeField] private LevelGenerator levelGenerator;
       [SerializeField] private GameUI gameUI;
       [SerializeField] private LiquidMixEffect liquidMixEffect;
-      private FlaskMixer flaskMixer;
+      
       private readonly CheckWinAction checkWinAction = new CheckWinAction();
       private readonly WinAction winAction = new WinAction();
       private Map map;
+      private FlaskMixer flaskMixer;
       public bool IsLevelComplete { get; private set; }
 
       private void Awake()
@@ -55,7 +55,7 @@ namespace Scripts.GameLogic
       {
          flaskMixer.Clear();
          levelGenerator.Clear();
-         map = levelGenerator.Generate(flaskMixer.FlaskSelect, 6, 2);
+         map = levelGenerator.Generate(flaskMixer.FlaskSelect);
          IsLevelComplete = false;
       }
    }

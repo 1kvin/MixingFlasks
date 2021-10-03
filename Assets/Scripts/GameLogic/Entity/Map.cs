@@ -8,14 +8,12 @@ namespace Scripts.GameLogic.Entity
     public class Map : ICloneable
     {
         public List<FlaskUnit> flaskUnits { get; private set; }
-        public int row  { get; private set; }
-        public int column { get; private set; }
+        public int numberFlask { get; private set; }
         
-        public Map(List<FlaskUnit> flaskUnits, int row, int column)
+        public Map(List<FlaskUnit> flaskUnits, int numberFlask)
         {
             this.flaskUnits = flaskUnits;
-            this.row = row;
-            this.column = column;
+            this.numberFlask = numberFlask;
         }
 
         private List<FlaskUnit> CloneFlaskUnits(List<FlaskUnit> flaskUnits)
@@ -25,7 +23,7 @@ namespace Scripts.GameLogic.Entity
 
         public object Clone()
         {
-            return new Map(CloneFlaskUnits(flaskUnits), row, column);
+            return new Map(CloneFlaskUnits(flaskUnits), numberFlask);
         }
     }
 }

@@ -17,6 +17,11 @@ namespace Scripts.UI
         {
             game.RestartLevel();
         }
+        
+        public void HomeButton()
+        {
+            
+        }
 
         public void UndoButton()
         {

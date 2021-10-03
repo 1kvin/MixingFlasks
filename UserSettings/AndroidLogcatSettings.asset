@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58R51EZB9R",
         "name": "com.atechnologies.mixingFlask",
-        "processId": 16426,
+        "processId": 20235,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -66,6 +66,30 @@
             "deviceId": "R58R51EZB9R",
             "name": "com.atechnologies.mixingFlask",
             "processId": 16426,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 14199,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 6910,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 8214,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R51EZB9R",
+            "name": "com.atechnologies.mixingFlask",
+            "processId": 20235,
             "exited": false
         }
     ],
